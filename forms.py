@@ -4,11 +4,10 @@ from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from .models import Users
 
 class CustomUserCreationForm(UserCreationForm):
-	
 	class Meta(UserCreationForm.Meta):
 		model = Users
-		list_display = ['email','companies_name', 'country']
-		fields = UserCreationForm.Meta.fields + ('email', 'country', 'companies_name')
+		list_display = ['email']
+		fields = UserCreationForm.Meta.fields + ('email')
 
 class CustomUserChangeForm(UserChangeForm):
 	class Meta:
