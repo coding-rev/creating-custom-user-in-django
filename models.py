@@ -35,7 +35,6 @@ class MyAccountManager(BaseUserManager):
 class Users(AbstractBaseUser):
 	username 		= models.CharField(max_length=30, unique=True)
 	profile_image 		= models.ImageField(blank=True, null=True)
-	companies_name 		= models.CharField(max_length=200) 
 	email 			= models.EmailField(unique=True)
 	date_joined 		= models.DateTimeField(verbose_name='date joined', auto_now_add=True)
 	last_login		= models.DateTimeField(verbose_name='last joined', auto_now=True)
@@ -61,6 +60,3 @@ class Users(AbstractBaseUser):
 
 	def has_module_perm(self, app_label):
 		return True
-
-
-
