@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- auth-register.html  Tue, 07 Jan 2020 03:39:47 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+<title>ApiTech · {% block title %}  {% endblock %}</title>
+
+<!-- General CSS Files -->
+<link rel="stylesheet" href="{% static 'assets/modules/bootstrap/css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/modules/fontawesome/css/all.min.css' %}">
+
+<!-- CSS Libraries -->
+<link rel="stylesheet" href="{% static 'assets/modules/jquery-selectric/selectric.css' %}">
+<link rel="stylesheet" href="assets/modules/bootstrap-social/bootstrap-social.css">
+
+<!-- Template CSS -->
+<link rel="stylesheet" href="{% static 'assets/css/style.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/components.min.css' %}">
+
+
+
+</head>
+
+<body class="layout-4">
+
+
+{% block content %}
+
+
+
+{% endblock %}
+
+
+
+<!-- General JS Scripts -->
+<script src="{% static 'assets/bundles/lib.vendor.bundle.js' %}"></script>
+<script src="{% static 'js/apitech.js' %}"></script>
+<script src="{% static 'js/retrieve-countries.js' %}">
+
+<!-- JS Libraies -->
+<script src="{% static 'assets/modules/jquery-pwstrength/jquery.pwstrength.min.js' %}"></script>
+<script src="{% static 'assets/modules/jquery-selectric/jquery.selectric.min.js' %}"></script>
+
+<!-- Page Specific JS File -->
+<script src="{% static 'js/page/auth-register.js' %}"></script>
+
+<!-- Template JS File -->
+<script src="{% static 'js/scripts.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>
